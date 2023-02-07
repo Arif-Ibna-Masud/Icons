@@ -1,0 +1,85 @@
+
+
+
+
+.--------------------------------------------------{}
+
+.footer-icons-size {
+    font-size: 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .--------------------------------------------------{}
+
+  .all-icons{
+    font-size: 34px;
+    padding-left: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(37, 35, 35);
+    margin: 10px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 4px 2px 2px #00FFFF;
+    line-height: 110px;
+    position: relative;
+    overflow: hidden;
+  }
+
+.--------------------------------------------------{}
+
+.same {
+    color: #1E90FF;
+}
+ .fa-instagram {
+    color: #FF00FF;
+ }
+ .fa-reddit-alien {
+    color: rgb(255, 94, 0);
+ }
+ .fa-github {
+    color: #A9A9A9;
+ }
+.fa-google {
+    color: white;
+}
+.--------------------------------------------------{}
+
+  .all-icons .icons{
+    transition: all 0.3s linear;
+  }
+
+.--------------------------------------------------{}
+
+  .all-icons:hover .fa-brands {
+    transform: scale(1.5);
+    color: aqua;
+  }
+
+  .all-icons::before{
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -50%;
+    background-color: black;
+    transform: rotate(60deg);
+  }
+  
+  .--------------------------------------------------{}
+
+  .all-icons:hover:before{
+    animation: socialicons 0.8s 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes socialicons{
+
+    0% { top: 90%; left: -50%; }
+        50% { top: -60%; left: -10%; }
+        100% { top: -10%; left: -10%; }
+  }
